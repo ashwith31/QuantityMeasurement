@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.quantitymeasurementtest.QuantityMeasuermentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-21T11:34:03" hostname="DESKTOP-038DJT2" time="0.022">
+<testsuite name="com.quantitymeasurementtest.QuantityMeasuermentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-21T15:39:38" hostname="DESKTOP-038DJT2" time="0.028">
   <properties/>
-  <testcase name="given0Inchand1Inch_ShouldReturnEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.022"/>
+  <testcase name="given2Feetand12Inch_WhenCompared_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.028"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
