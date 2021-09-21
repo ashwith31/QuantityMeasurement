@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.quantitymeasurementtest.QuantityMeasuermentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-21T01:34:52" hostname="DESKTOP-038DJT2" time="0.018">
+<testsuite name="com.quantitymeasurementtest.QuantityMeasuermentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-21T02:15:08" hostname="DESKTOP-038DJT2" time="0.021">
   <properties/>
-  <testcase name="givenFeetFromDifferent_RefFeet_Equal_ShouldReturnFalse()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.018"/>
+  <testcase name="givenDifferentType_WhenCompared_ShouldReturnFalse()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

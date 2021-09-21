@@ -2,6 +2,7 @@ package com.quantitymeasurementtest;
 
 import com.quantitymeasurement.Feet;
 import com.quantitymeasurement.Inch;
+import com.quantitymeasurement.NewFeet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -41,6 +42,20 @@ public class QuantityMeasuermentTest {
         Feet feet = new Feet(0.0);
         boolean result = feet == feet;
         Assertions.assertTrue(result);
+    }
+
+    @Test
+    void givenDifferentType_ifnotEquals_ShouldReturnTrue() {
+        Feet feet = new Feet(0.0);
+        NewFeet newfeet = new NewFeet(0.0);
+        Assertions.assertNotEquals(feet, newfeet);
+    }
+
+    @Test
+    void givensameType_ifEquals_ShouldReturnTrue() {
+        Feet feet = new Feet(0.0);
+        Feet feet1 = new Feet(0.0);
+        Assertions.assertEquals(feet, feet1);
     }
     @Test
     public void given0Inchand0Inch_ShouldReturnEqual(){
