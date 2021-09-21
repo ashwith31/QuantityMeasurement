@@ -1,22 +1,25 @@
 package com.quantitymeasurement;
 
-public class Feet {
+public class Length {
+    private final Unit unit;
     private final double value;
 
-    public Feet(double value) {
+    public enum Unit {FEET, INCH}
+
+    public Length(Unit unit, double value) {
+        this.unit = unit;
         this.value = value;
     }
 
     public double ftToInConversion() {
-        return value * 12;
+        return 12*value;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Feet feet = (Feet) o;
-        return Double.compare(feet.value, value) == 0;
+        Length length = (Length) o;
+        return Double.compare(length.value, value) == 0 && unit == length.unit;
     }
-
 }
