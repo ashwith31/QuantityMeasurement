@@ -2,7 +2,6 @@ package com.quantitymeasurementtest;
 
 import com.quantitymeasurement.Feet;
 import com.quantitymeasurement.Inch;
-import com.quantitymeasurement.NewFeet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -45,9 +44,9 @@ public class QuantityMeasuermentTest {
     }
 
     @Test
-    void givenDifferentType_ifnotEquals_ShouldReturnTrue() {
+    void givenDifferentType_ifNotEquals_ShouldReturnTrue() {
         Feet feet = new Feet(0.0);
-        NewFeet newfeet = new NewFeet(0.0);
+        boolean newfeet = true;
         Assertions.assertNotEquals(feet, newfeet);
     }
 
@@ -57,15 +56,30 @@ public class QuantityMeasuermentTest {
         Feet feet1 = new Feet(0.0);
         Assertions.assertEquals(feet, feet1);
     }
+
     @Test
-    public void given0Inchand0Inch_ShouldReturnEqual(){
+    public void givenFeetofSameValue_ShouldReturnEqual(){
+        Feet feet = new Feet(1.0);
+        Feet feet1 = new Feet(1.0);
+        Assertions.assertEquals(feet, feet1);
+    }
+
+    @Test
+    public void givenFeetofDifferentValue_ShouldReturnNotEqual(){
+        Feet feet = new Feet(1.0);
+        Feet feet1 = new Feet(2.0);
+        Assertions.assertNotEquals(feet, feet1);
+    }
+
+    @Test
+    public void given0Inchand0Inch_ShouldReturnEqual() {
         Inch inch1 = new Inch(0.0);
         Inch inch2 = new Inch(0.0);
         Assertions.assertEquals(inch1, inch2);
     }
 
     @Test
-    public void given0Inchand1Inch_ShouldReturnEqual(){
+    public void given0Inchand1Inch_ShouldReturnNotEqual() {
         Inch inch1 = new Inch(0.0);
         Inch inch2 = new Inch(1.0);
         Assertions.assertNotEquals(inch1, inch2);
