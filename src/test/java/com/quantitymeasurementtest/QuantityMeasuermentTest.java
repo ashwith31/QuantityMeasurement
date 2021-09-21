@@ -22,6 +22,27 @@ public class QuantityMeasuermentTest {
     }
 
     @Test
+    public void given0FeetAndNull_ShouldReturnNotEqual() {
+        Feet feet1 = new Feet(0.0);
+        Feet feet2 = null;
+        Assertions.assertNotEquals(feet1, feet2);
+    }
+
+    @Test
+    public void givenFeetFromDifferent_RefFeet_ifNotEqual_ShouldReturnFalse() {
+        Feet feet1 = new Feet(0.0);
+        Feet feet2 = new Feet(0.0);
+        boolean result = feet2 == feet1;
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenFeetFromSameRef_ifEqual_ShouldReturnTrue() {
+        Feet feet = new Feet(0.0);
+        boolean result = feet == feet;
+        Assertions.assertTrue(result);
+    }
+    @Test
     public void given0Inchand0Inch_ShouldReturnEqual(){
         Inch inch1 = new Inch(0.0);
         Inch inch2 = new Inch(0.0);
