@@ -222,4 +222,41 @@ public class QuantityMeasuermentTest {
         boolean check = yard1.compare(feet1);
         Assertions.assertFalse(check);
     }
+
+    @Test
+    public void given0Centimeterand0Centimeter_ShouldReturnEqual() {
+        Length centimeter1 = new Length(Length.Unit.CENTIMETER, 0.0);
+        Length centimeter2 = new Length(Length.Unit.CENTIMETER, 0.0);
+        Assertions.assertEquals(centimeter1, centimeter2);
+    }
+
+    @Test
+    public void given0Centimeterand1Centimeter_ShouldReturnNotEqual() {
+        Length centimeter1 = new Length(Length.Unit.CENTIMETER, 0.0);
+        Length centimeter2 = new Length(Length.Unit.CENTIMETER, 1.0);
+        Assertions.assertNotEquals(centimeter1, centimeter2);
+    }
+
+    @Test
+    public void given0CentimeterAndNull_ShouldReturnNotEqual() {
+        Length centimeter1 = new Length(Length.Unit.CENTIMETER, 0.0);
+        Length centimeter2 = null;
+        Assertions.assertNotEquals(centimeter1, centimeter2);
+    }
+
+    @Test
+    public void givenCentimeterFromDifferent_RefFeet_ifNotEqual_ShouldReturnFalse() {
+        Length centimeter1 = new Length(Length.Unit.CENTIMETER, 0.0);
+        Length centimeter2 = new Length(Length.Unit.CENTIMETER, 0.0);
+        boolean result = centimeter1 == centimeter2;
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenCentimeterFromSameRef_ifEqual_ShouldReturnTrue() {
+        Length centimeter1 = new Length(Length.Unit.CENTIMETER, 0.0);
+        boolean result = centimeter1 == centimeter1;
+        Assertions.assertTrue(result);
+    }
+
 }

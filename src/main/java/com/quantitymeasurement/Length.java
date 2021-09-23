@@ -6,11 +6,13 @@ public class Length {
 
     private static final double FEET_TO_INCH = 12.0;
     private static final double FEET_TO_YARD = 3.0;
+    private static final double INCH_TO_CENTIMETER = 0.4;
+
 
     private final Unit unit;
     private final double value;
 
-    public enum Unit{ FEET, INCH, YARD};
+    public enum Unit{ FEET, INCH, YARD, CENTIMETER};
 
     public Length(Unit unit, double value) {
         this.unit = unit;
