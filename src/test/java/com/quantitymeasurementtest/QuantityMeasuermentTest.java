@@ -259,4 +259,20 @@ public class QuantityMeasuermentTest {
         Assertions.assertTrue(result);
     }
 
+    @Test
+    public void given2Inchand5Centimeter_WhenCompared_ShouldReturnEqual() {
+        Length inch = new Length(Length.Unit.INCH, 2.0);
+        Length centimeter = new Length(Length.Unit.CENTIMETER, 5.0);
+        boolean check = inch.compare(centimeter);
+        Assertions.assertTrue(check);
+    }
+
+    @Test
+    public void given2Inchand6Inch_WhenCompared_ShouldReturnNotEqual() {
+        Length inch = new Length(Length.Unit.INCH, 2.0);
+        Length centimeter = new Length(Length.Unit.CENTIMETER, 6.0);
+        boolean check = inch.compare(centimeter);
+        Assertions.assertFalse(check);
+    }
+
 }
