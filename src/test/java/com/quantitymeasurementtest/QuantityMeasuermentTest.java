@@ -378,4 +378,13 @@ public class QuantityMeasuermentTest {
         boolean result = length == length;
         Assertions.assertTrue(result);
     }
+
+    @Test
+    void given1GallonAnd3And78Litres_ShouldReturnTrue() {
+        Length gallon = new Length(Length.Unit.GALLON, 1.0);
+        Length litre = new Length(Length.Unit.LITER, 3.78);
+        boolean check = gallon.compare(litre);
+        Assertions.assertTrue(check);
+    }
+
 }

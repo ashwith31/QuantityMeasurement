@@ -7,6 +7,7 @@ public class Length {
     private static final double FEET_TO_INCH = 12.0;
     private static final double FEET_TO_YARD = 3.0;
     private static final double INCH_TO_CENTIMETER = 0.4;
+    private static final double GALLON_TO_LITER = 3.78;
 
     private final Unit unit;
     private final double value;
@@ -39,6 +40,8 @@ public class Length {
             return Double.compare(this.value, that.value*FEET_TO_YARD ) == 0;
         if (this.unit.equals(Unit.INCH) && that.unit.equals(Unit.CENTIMETER))
             return Double.compare(this.value, that.value * INCH_TO_CENTIMETER) == 0;
+        if (this.unit.equals(Unit.GALLON) && that.unit.equals(Unit.LITER))
+            return Double.compare(this.value * GALLON_TO_LITER, that.value) == 0;
         return false;
     }
 
