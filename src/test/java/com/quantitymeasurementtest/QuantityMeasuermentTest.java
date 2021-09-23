@@ -387,4 +387,39 @@ public class QuantityMeasuermentTest {
         Assertions.assertTrue(check);
     }
 
+    @Test
+    public void given0Milliliterand0MilliLiter_ShouldReturnEqual() {
+        Length length1 = new Length(Length.Unit.MILLILITER, 0.0);
+        Length length2 = new Length(Length.Unit.MILLILITER, 0.0);
+        Assertions.assertEquals(length1, length2);
+    }
+
+    @Test
+    public void given0MilliLiterand1MilliLiter_ShouldReturnNotEqual() {
+        Length length1 = new Length(Length.Unit.MILLILITER, 0.0);
+        Length length2 = new Length(Length.Unit.MILLILITER, 1.0);
+        Assertions.assertNotEquals(length1, length2);
+    }
+
+    @Test
+    public void given0MilliLiterAndNull_ShouldReturnNotEqual() {
+        Length length1 = new Length(Length.Unit.MILLILITER, 0.0);
+        Length length2 = null;
+        Assertions.assertNotEquals(length1, length2);
+    }
+
+    @Test
+    public void givenMilliLiterFromDifferent_RefFeet_ifNotEqual_ShouldReturnFalse() {
+        Length length1 = new Length(Length.Unit.MILLILITER, 0.0);
+        Length length2 = new Length(Length.Unit.MILLILITER, 0.0);
+        boolean result = length1 == length2;
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenMilliLiterFromSameRef_ifEqual_ShouldReturnTrue() {
+        Length length = new Length(Length.Unit.MILLILITER, 0.0);
+        boolean result = length == length;
+        Assertions.assertTrue(result);
+    }
 }

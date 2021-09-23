@@ -12,7 +12,7 @@ public class Length {
     private final Unit unit;
     private final double value;
 
-    public enum Unit{ FEET, INCH, YARD, CENTIMETER, GALLON, LITER};
+    public enum Unit{ FEET, INCH, YARD, CENTIMETER, GALLON, LITER, MILLILITER};
 
     public Length(Unit unit, double value) {
         this.unit = unit;
