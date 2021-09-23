@@ -275,4 +275,36 @@ public class QuantityMeasuermentTest {
         Assertions.assertFalse(check);
     }
 
+    @Test
+    public void givenTwoInches_WhenAdded_ShouldReturnSumInInch() {
+        Length inch1 = new Length(Length.Unit.INCH, 2);
+        Length inch2 = new Length(Length.Unit.INCH, 2);
+        double sum = Length.add(inch1, inch2);
+        Assertions.assertEquals(4, sum);
+    }
+
+    @Test
+    public void givenFeetAndInches_WhenAdded_ShouldReturnSumInInch() {
+        Length inch1 = new Length(Length.Unit.FEET, 1);
+        Length inch2 = new Length(Length.Unit.INCH, 2);
+        double sum = Length.add(inch1, inch2);
+        Assertions.assertEquals(14, sum);
+    }
+
+    @Test
+    public void givenTwoFeet_WhenAdded_ShouldReturnSumInInch() {
+        Length feet1 = new Length(Length.Unit.FEET, 1);
+        Length feet2 = new Length(Length.Unit.FEET, 1);
+        double sum = Length.add(feet1, feet2);
+        Assertions.assertEquals(24, sum);
+    }
+
+    @Test
+    public void givenInchAndCentimeter_WhenAdded_ShouldReturnSumInInch() {
+        Length inch1 = new Length(Length.Unit.INCH, 2);
+        Length centimeter1 = new Length(Length.Unit.CENTIMETER, 2.5);
+        double sum = Length.add(inch1, centimeter1);
+        Assertions.assertEquals(3, sum);
+    }
+
 }

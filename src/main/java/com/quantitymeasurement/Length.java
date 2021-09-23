@@ -18,6 +18,19 @@ public class Length {
         this.unit = unit;
         this.value = value;
     }
+
+    public static double add(Length value1, Length value2) {
+        if (value1.unit.equals(Unit.INCH) && value2.unit.equals(Unit.INCH))
+            return value1.value + value2.value;
+        if (value1.unit.equals(Unit.FEET) && value2.unit.equals(Unit.INCH))
+            return (value1.value * FEET_TO_INCH) + value2.value;
+        if (value1.unit.equals(Unit.FEET) && value2.unit.equals(Unit.FEET))
+            return (value1.value * FEET_TO_INCH) + (value2.value * FEET_TO_INCH);
+        if (value1.unit.equals(Unit.INCH) && value2.unit.equals(Unit.CENTIMETER))
+            return value1.value + (value2.value / 2.5);
+        return 0;
+    }
+
     public boolean compare(Length that) {
         if(this.unit.equals(Unit.FEET) && that.unit.equals(Unit.FEET))
             return Double.compare(this.value, that.value ) == 0;
