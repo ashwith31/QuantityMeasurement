@@ -422,4 +422,12 @@ public class QuantityMeasuermentTest {
         boolean result = length == length;
         Assertions.assertTrue(result);
     }
+
+    @Test
+    void given1LitreAnd3And1000Ml_ShouldReturnTrue() {
+        Length litre = new Length(Length.Unit.LITER, 1);
+        Length milliMeter = new Length(Length.Unit.MILLILITER, 1000.0);
+        boolean check = litre.compare(milliMeter);
+        Assertions.assertTrue(check);
+    }
 }
