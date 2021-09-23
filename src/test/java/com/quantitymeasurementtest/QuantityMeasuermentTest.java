@@ -342,4 +342,40 @@ public class QuantityMeasuermentTest {
         boolean result = gallon == gallon;
         Assertions.assertTrue(result);
     }
+
+    @Test
+    public void given0Literand0Liter_ShouldReturnEqual() {
+        Length length1 = new Length(Length.Unit.LITER, 0.0);
+        Length length2 = new Length(Length.Unit.LITER, 0.0);
+        Assertions.assertEquals(length1, length2);
+    }
+
+    @Test
+    public void given0Literand1Liter_ShouldReturnNotEqual() {
+        Length length1 = new Length(Length.Unit.LITER, 0.0);
+        Length length2 = new Length(Length.Unit.LITER, 1.0);
+        Assertions.assertNotEquals(length1, length2);
+    }
+
+    @Test
+    public void given0LiterAndNull_ShouldReturnNotEqual() {
+        Length length1 = new Length(Length.Unit.LITER, 0.0);
+        Length length2 = null;
+        Assertions.assertNotEquals(length1, length2);
+    }
+
+    @Test
+    public void givenLiterFromDifferent_RefFeet_ifNotEqual_ShouldReturnFalse() {
+        Length length1 = new Length(Length.Unit.LITER, 0.0);
+        Length length2 = new Length(Length.Unit.LITER, 0.0);
+        boolean result = length1 == length2;
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenLiterFromSameRef_ifEqual_ShouldReturnTrue() {
+        Length length = new Length(Length.Unit.LITER, 0.0);
+        boolean result = length == length;
+        Assertions.assertTrue(result);
+    }
 }
