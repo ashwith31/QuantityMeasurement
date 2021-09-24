@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.quantitymeasurementtest.QuantityMeasuermentTest" tests="38" skipped="0" failures="0" errors="0" timestamp="2021-09-23T18:54:23" hostname="DESKTOP-038DJT2" time="0.092">
+<testsuite name="com.quantitymeasurementtest.QuantityMeasuermentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-24T05:21:45" hostname="DESKTOP-038DJT2" time="0.057">
   <properties/>
-  <testcase name="givenTwoInches_WhenAdded_ShouldReturnSumInInch()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.035"/>
-  <testcase name="given36InchAnd1Yard_WhenCompared_ShouldReturnEqualLength()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.002"/>
-  <testcase name="givenInchandDifferentType_ifNotEquals_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.002"/>
-  <testcase name="given1MilliLitreAnd1Litres_WhenAdd_ShouldReturn1000Litres()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="givenInchAndCentimeter_WhenAdded_ShouldReturnSumInInch()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="givenFeetAndInches_WhenAdded_ShouldReturnSumInInch()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="givenTwoFeet_WhenAdded_ShouldReturnSumInInch()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="given1FeetAnd1Yard_WhenCompared_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="givenFeetFromSameRef_ifEqual_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given0InchAndNull_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given5InchAnd1Yard_WhenCompared_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="givenInchFromDifferent_RefFeet_ifNotEqual_ShouldReturnFalse()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given0Inchand1Inch_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="given1YardAnd3Feet_WhenCompared_ShouldReturnEqualLength()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given0Inchand0Inch_ShouldReturnEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.002"/>
-  <testcase name="given1InchAnd1Yard_WhenCompared_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given1GallonAnd3And78Litres_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="givensameType_ifEquals_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given2Inchand6Inch_WhenCompared_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="givenFeetofSameValue_ShouldReturnEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given1Feetand12Inch_WhenCompared_ShouldReturnEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="givenInchFromSameRef_ifEqual_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="givenFeetFromDifferent_RefFeet_ifNotEqual_ShouldReturnFalse()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="given2Feetand12Inch_WhenCompared_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="givenDifferentType_ifNotEquals_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="given0Gallonand0Gallon_ShouldReturnEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="given0FeetAndNull_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given0Feetand1Feet_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given2Inchand5Centimeter_WhenCompared_ShouldReturnEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given1YardAnd36Inch_WhenCompared_ShouldReturnEqualLength()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given1YardAnd5Feet_WhenCompared_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given2GallonAnd3And78Litres_WhenAdd_ShouldReturn7And57Litres()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given1LitreAnd3And1000Ml_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given1YardAnd5Inch_WhenCompared_ShouldReturnNotEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="givensameInchType_ifEquals_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
-  <testcase name="given0Feetand0Feet_ShouldReturnEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="given3FeetAnd1Yard_WhenCompared_ShouldReturnEqualLength()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.0"/>
-  <testcase name="given3FeetAnd1Yard_WhenCompared_ShouldReturnEqual()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.001"/>
+  <testcase name="given212FahrenheitAnd100Celsius_WhenCompared_ShouldReturnTrue()" classname="com.quantitymeasurementtest.QuantityMeasuermentTest" time="0.057"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
